@@ -1,0 +1,152 @@
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.option {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    user-select: none; 
+}
+.option:has(input:checked),
+.option.active {
+    background-color: #f0f8ff;
+    border: 2px solid #008080;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 128, 128, 0.2);
+}
+
+.option:hover {
+    background-color: #eefaff;
+    border-color: #007070;
+}
+
+.option.popular {
+    border: 2px solid #008080;
+}
+
+.bundle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount {
+    color: #008080;
+    font-weight: bold;
+}
+
+.tag {
+    font-size: 0.8em;
+    background-color: #008080;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.hidden {
+    display: none;
+}
+
+.selectors {
+    margin-top: 10px;
+}
+
+.pair {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+label {
+    font-size: 0.9em;
+}
+
+select {
+    padding: 5px;
+    border: 1px solid #008080;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #006666;
+}
+
+.total {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #008080;
+}
+.add-to-cart {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #008080, #00a8a8);
+    color: white;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 4px 8px rgba(0, 128, 128, 0.2);
+}
+
+.add-to-cart:hover {
+    background: linear-gradient(135deg, #007070, #008888);
+    transform: scale(1.05);
+}
+
+.add-to-cart:active {
+    transform: scale(0.95);
+}
+
+span {
+    color: #006666;
+}
+
+.pair.selected {
+    background-color: #f0f8ff;
+    border: 2px solid #008080;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 128, 128, 0.2);
+} 
+
+
+
